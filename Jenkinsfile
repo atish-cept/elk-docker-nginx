@@ -3,7 +3,7 @@ pipeline {
 
 
     environment {
-        YOUR_SECRET_KEY = 'yourActualSecretKeyHere'
+        YOUR_SECRET_KEY = ''
     }
 
     parameters {

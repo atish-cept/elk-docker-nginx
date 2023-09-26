@@ -2,16 +2,7 @@ pipeline {
     agent any 
 
 
-    environment {
-        YOUR_SECRET_KEY = ''
-    }
-
-    parameters {
-        string(name: 'ciBuildVersion', defaultValue: '1.0.0', description: 'Build version')
-        choice(name: 'ciBuildEnv', choices: ['prod', 'dev', 'staging'], description: 'Build environment')
-    }
-
-    stages {
+   stages {
         stage('Dependencies') {
             steps {
                 echo 'Fetching dependencies...'
